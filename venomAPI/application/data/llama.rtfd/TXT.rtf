@@ -1,0 +1,878 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\froman\fcharset0 Times-Roman;
+\f3\fnil\fcharset0 STIXTwoMath-Regular;\f4\fswiss\fcharset0 Helvetica-Oblique;\f5\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red222\green222\blue220;
+\red34\green218\blue148;\red236\green250\blue253;\red0\green0\blue0;\red221\green221\blue220;\red78\green84\blue93;
+\red255\green255\blue255;\red235\green248\blue252;\red34\green218\blue148;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;\cssrgb\c89506\c89505\c88947;
+\cssrgb\c8657\c86921\c64769;\cssrgb\c93923\c98259\c99244;\cssrgb\c0\c1\c1;\cssrgb\c89216\c89216\c88993;\cssrgb\c37647\c40392\c43922;
+\cssrgb\c100000\c100000\c100000\c7059;\cssrgb\c93571\c97894\c99229;\cssrgb\c8639\c86769\c64732;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid202\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid401\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Account\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 An account on a blockchain is a unique identifier for a user that holds cryptocurrency and allows for transactions and smart contract execution. In the Venom blockchain, every account is a smart contract with its code, and there is no concept of externally-owned accounts (owned by key pair). This approach is called Account Abstraction and enables flexible authentication options beyond private key ownership.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Wallet account\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A wallet account is a specific type of {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#smart-contract"}}{\fldrslt \cf2 Smart Contract}} designed to store and interact with your VENOM token balance and other {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#smart-contract"}}{\fldrslt \cf2 Smart Contracts}}.\
+Users who intend to send Venom tokens to network participants must first deploy a wallet account.\
+\pard\pardeftab720\partightenfactor0
+\cf2 INFO\
+Learn how to create a wallet account by {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/general/wallet/create-a-new-wallet-account"}}{\fldrslt \cf2 \ul \ulc2 Clicking Here}}\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf2 All supported cryptocurrency wallets can calculate the address of your wallet account based on its type ({\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#default-wallet"}}{\fldrslt \cf2 Default}}, {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#multisig-wallet"}}{\fldrslt \cf2 Multisig}}) and your {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#keys"}}{\fldrslt \cf2 Public key}} even before it is deployed. You will be able to receive token transfers to this address immediately, as it has been calculated.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Address\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The smart contract's unique public identifier in the network stores the code and state of the contract and serves as the entry point for messages directed to it.\
+The address is composed of two parts: the identifier of the {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#workchain"}}{\fldrslt \cf2 Workchain}} and the computed part.\
+Example: 
+\f1\fs30\fsmilli15200 \cf2 0:4de50f6789111213a3141516b7fed892fc123ca22158c0d6d0d34daf4c6a7a0a
+\f0\fs32 \cf2 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\fs30\fsmilli15200 \cf2 0
+\f0\fs32 \cf2  \'96 workchain_id, 
+\f1\fs30\fsmilli15200 \cf2 3de...7a0a
+\f0\fs32 \cf2  \'96 computed_part\
+A workchain_id is an integer identifier defining a {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#workchain"}}{\fldrslt \cf2 Workchain}}.\
+The computed part of the address is a 256-bit internal address determined by the {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#hash-of-the-code"}}{\fldrslt \cf2 Hash of the code}} and the data contained in the {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#constructor-message"}}{\fldrslt \cf2 Constructor Message}}. It can be calculated even before the contract is deployed on the network. This means that it is possible to send messages, including value-bearing messages, to contracts that have not yet been deployed.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Block\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A group of information that includes {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#transaction"}}{\fldrslt \cf2 Transactions}}, outbound messages, and updates to the state.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Block Explorer\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A web application where a user can explore the blocks, messages, transactions, and accounts in the network.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Bridge\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A network of relayers that connect two or more blockchains enables the transfer of assets from one chain to another. Venom network supports bridges with Ethereum, Binance Smart Chain, and Fantom Opera.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Consensus\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A fault-tolerant mechanism employed in blockchain networks to reach an agreement on a specific data value among a group of participants. The Venom network's algorithm is a Proof-of-stake consensus algorithm from the Byzantine Fault Tolerant (BFT) family of algorithms.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Constructor message\
+\pard\pardeftab720\sa400\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#wallet-account"}}{\fldrslt 
+\fs32 \cf2 An Account}}
+\fs32 \cf2 , or {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#smart-contract"}}{\fldrslt \cf2 Smart Contract}}, is established by sending a specific constructor message to its address. The message includes the smart contract's initial code and initial data.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Commission\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Validators are rewarded for their participation in network security by handling transactions and taking part in the consensus process.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Crypto wallet\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A hardware or software wallet that stores {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#keys"}}{\fldrslt \cf2 Public/Private Keys}}, and {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#seed-phrase"}}{\fldrslt \cf2 Seed Phrases}} for signing cryptocurrency transactions. {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#crypto-wallet"}}{\fldrslt \cf2 Crypto Wallets}} in the Venom ecosystem are able to work with {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#wallet-account"}}{\fldrslt \cf2 Wallet Accounts}}, calculate their address by the {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#keys"}}{\fldrslt \cf2 Public Key}}, deploy them, and perform token transfers.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Dapp\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A decentralized application is typically presented as a web interface that interacts with smart contracts deployed on the blockchain network, instead of a centralized API. Users typically interact with dApps through a cryptocurrency wallet or browser.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 External message\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A message that is not generated by a {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#smart-contract"}}{\fldrslt \cf2 Smart Contract}} within the Venom network but is received from off-chain. A common example occurs when a user wants to transfer funds from one {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#wallet-account"}}{\fldrslt \cf2 Account}} to another. In this case, the user sends a signed external message to {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#wallet-account"}}{\fldrslt \cf2 The Wallet Account}}, and the {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#wallet-account"}}{\fldrslt \cf2 Wallet Account}} authorizes the sender and permits them to pay for the transaction fee from their balance. External messages differ from {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#internal-message"}}{\fldrslt \cf2 Internal Messages}} as they cannot carry value and therefore cannot pay for their own processing (i.e., their "gas").\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Hash of the code\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Sha256 hash of the contract code and the initial state.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Default Wallet\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A wallet account with straightforward logic for transferring funds, suitable for the majority of users.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Transaction\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The outcome of message execution that comprises information about the sender, the transaction logical time, incoming and outgoing messages, and the impact of the transaction on the state.\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 Components of a transaction
+\f0 \cf2 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Homogeneous\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 In a {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#multi-blockchain"}}{\fldrslt \cf2 Multi-Blockchain}} system, all the blockchains can be of the same type and have the same rules (i.e. using the same format of transactions, the same virtual machine for executing {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#smart-contract"}}{\fldrslt \cf2 Smart-Contract}} code, sharing the same cryptocurrency, etc.) and this similarity is deliberately exploited, but with different data in each blockchain. In this scenario, the system is considered homogeneous.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Heterogeneous\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 In a {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#multi-blockchain"}}{\fldrslt \cf2 Multi-Blockchain}} system, when different blockchains (typically referred to as {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#workchain"}}{\fldrslt \cf2 Workchains}} in this case) can have different "rules", the system is considered heterogeneous.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Giver\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Giver, used in Locklift is a smart contract that provides VENOM tokens to other contracts on the network during the development and testing phases. The Giver contract is typically deployed during the development and testing phases of a project.\
+By default giver deployed on the 
+\f1\fs30\fsmilli15200 \cf2 0:ece57bcc6c530283becbbd8a3b24d3c5987cdddc3c8b7b33be6e4a6312490415
+\f0\fs32 \cf2  address in {\field{\*\fldinst{HYPERLINK "https://github.com/tonlabs/evernode-se"}}{\fldrslt \cf2 local-node}}.\
+Also, you can {\field{\*\fldinst{HYPERLINK "https://github.com/broxus/locklift#note-about-giver-settings"}}{\fldrslt \cf2 setup custom contract}} as Giver in Locklift.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Keys\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The private and public keys are large numbers that are utilized in a complex mathematical process for encrypting, decrypting, signing, and verifying messages.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Interoperability\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The capability of a blockchain to transfer information and share data with other blockchains.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Internal message\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The message type that one contract sends to another contract.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Mainnet\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Mainnet, short for "main network," refers to the primary public blockchain network.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Masterchain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The master blockchain holds the necessary information to achieve {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#consensus"}}{\fldrslt \cf2 Consensus}} among validators.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Multisig wallet\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A multi-signature wallet is a wallet that is employed by two or more users to increase security by requiring multiple signatures to sign transactions before execution.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Multi-blockchain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A blockchain where multiple chains can coexist simultaneously.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Workchain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A type of blockchain in the Venom network under the Masterchain, which has its own state transition functions, cryptographic primitives, transaction or block structures, and native cryptocurrency, while leveraging the security of the Masterchain.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Validator\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Designated nodes, known as validators, produce and sign new blocks in the blockchain.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Delegator\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A delegator allocates its tokens to a validator to participate in maintaining network security. Delegators share revenue and risks with their validators.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Nominator\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A participant in network decentralization by bonding their tokens, nominates a validator to participate in the consensus protocol and create blocks.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Seed phrase\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 A seed phrase is a sequence of words generated by a {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#crypto-wallet"}}{\fldrslt \cf2 Cryptocurrency Wallet}} that grants access to the cryptocurrency associated with that wallet.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Smart contract\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Code that performs arbitrary state changes within the blockchain, executable on {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#tvm"}}{\fldrslt \cf2 TVM}} is the Turing complete {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/glossary#virtual-machine"}}{\fldrslt \cf2 Virtual Machine}}.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Staking pool\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Any network participant can deploy a smart contract that enables other network participants to nominate its owner for the role of a validator and participate in the distribution of the validator reward.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Shardchain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 It follows the same rules and block format as the workchain, but is responsible for only a subset of accounts, based on several initial (most significant) bits of the account address. Since all these shardchains share a common block format and rules, the Venom Blockchain is homogeneous in this aspect, similar to what has been proposed in one of the Ethereum scaling proposals.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf2 Virtual machine\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 The Venom network supports a Turing-complete virtual machine for executing smart contract code.\
+\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 VENOM\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Venom is the native currency of the Venom network, similar to how ETH is the native currency of the Ethereum blockchain.\
+The smallest transferable VENOM unit is Nano VENOM.\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2505\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3227\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth5416\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth4314\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf7 Unit\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf7 Decimal Places\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf7 Conversion to NANO VENOM\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf7 Conversion to VENOM\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2505\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3227\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth5416\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth4314\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 NanoVENOM\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 0\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 0.000000001\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat10 \clwWidth2505\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx2160
+\clvertalc \clcbpat10 \clwWidth3227\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clcbpat10 \clwWidth5416\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx6480
+\clvertalc \clcbpat10 \clwWidth4314\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 MicroVENOM\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 10^3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 0.000001\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2505\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3227\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth5416\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth4314\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 MilliVENOM\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 6\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 10^6\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 0.001\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat10 \clwWidth2505\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx2160
+\clvertalc \clcbpat10 \clwWidth3227\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clcbpat10 \clwWidth5416\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx6480
+\clvertalc \clcbpat10 \clwWidth4314\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 VENOM\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 9\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 10^9\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 1\cell \lastrow\row
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 VENOM utility\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The Venom currency has practical uses such as paying for transaction fees to maintain the network by validators, securing the network through POS mechanisms, and supporting validators by network participants through DePools staking.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Token standards\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 TIP-3. Fungible token\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf7 INFO\
+If you need to create your own fungible token in the Venom network follow this {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/build/development-guides/how-to-create-your-own-fungible-tip-3-token/fungible-tokens-in-venom-network"}}{\fldrslt \cf7 \ul \ulc7 Guide}}\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf7 Just as ERC-20 is the most widely-used standard in the Ethereum network, TIP-3 serves the same purpose in the Venom network. TIP-3 is designed to align with the distributed system architecture of the Venom network, and is cost-efficient for its fee-paying model.\
+TIP-3 provides the following functionalities:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Transfer tokens from one account to another\
+\ls1\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Obtain the current token balance of an account\
+\ls1\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Retrieve the total supply of the token available on the network\
+\ls1\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Mint and burn tokens\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 TIP-4. Non-Fungible\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The TIP-4 standard describes the second most widely used type of token as NFT. Specifically designed for the architecture of the Venom network, the TIP-4 standard provides an optimal way to create, exchange, and trade non-fungible tokens.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Wrapped Venom (WVenom)\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Testnet Address: 
+\f1\fs30\fsmilli15200 \cf7 0:2c3a2ff6443af741ce653ae4ef2c85c2d52a9df84944bbe14d702c3131da3f14
+\f0\fs32 \cf7 \
+Why do we need WVenom token?\
+If you are a regular user of DeFi protocols, you will likely not experience direct ownership of the VENOM token. As protocols typically handle the process of wrapping the VENOM token behind the scenes, you don't have to concern yourself with it.\
+Why do they do it?\
+Venom is the native token of the Venom blockchain, and WVENOM is a TIP-3 standard token implemented in smart contract code. DeFi protocols only support TIP-3 for ease of implementation and general compatibility, in this aspect, the Venom network follows the prevalent practice in most blockchains.\
+For example, a swap on a DEX in the VENOM -> USDT pair will appear as a process in which VENOM first wraps into WVENOM, and then WVENOM changes to USDT.\
+Is this not the actual VENOM?\
+\pard\pardeftab720\partightenfactor0
+\cf7 WVENOM is a fungible TIP-3 token, issued 1 to 1 with the VENOM token. You always have the option to convert your WVENOM back to VENOM.\
+\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Architecture\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The Venom blockchain is a heterogeneous multi-blockchain system with dynamic sharding capabilities.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Masterchain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The masterchain is a layer-0 chain, facilitating coordination and communication among workchains, shardchains, and accounts. It is responsible for the message routing, maintaining the network configuration, and information about validators, their stakes, and election rounds. The masterchain stores and distributes the current shard configuration and the latest block hashes of each corresponding shardchain. It serves as the backbone of the Venom blockchain, providing a high level of security for all components connected to it.\
+The masterchain validators are incentivized to act honestly and secure the network by staking their tokens. Only a limited number of validators with the largest stakes are responsible for generating new masterchain blocks, even if a larger number of validators are running on the network. The rest of the validators will create new shardchain blocks, with each shardchain block being generated and validated by its group of validators.\
+Shardchains generate new blocks almost simultaneously, while a new block of the masterchain is generated roughly one second later as the masterchain block must include the hashes of the most recent blocks of all shardchains, which ensures that the blocks are finalized.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 \
+Workchains\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 A workchain is a specialized layer-1 blockchain secured by the global validators set. By being connected to the masterchain, workchains also benefit from its security, as the masterchain validators' efforts protect them.\
+Based on masterchain security, a workchain may have its own state transition function, virtual machine, cryptographic primitives, transaction or block structures, and native cryptocurrencies.\
+Each workchain can be customized to fit the specific needs and requirements of the application it hosts, providing greater flexibility for developers. Powered with the capability to customize their own commissions and set emission schemes, they will have complete control over their own economies. In this respect, the Venom Blockchain is heterogeneous.\
+This approach allows for horizontal scalability, as the workload is distributed across multiple independent domain-specific blockchains with their specific validator set. Workchains can lead to better performance, faster transaction processing, and improved overall network efficiency.\
+The Venom blockchain is designed as an open platform for developers to create and deploy their workchains to the Venom ecosystem.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Basechain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 At launch, The Venom blockchain consists of two networks: the Masterchain and the Basechain. The Basechain is the first layer-1 workchain for end-users, supporting dApps and serving as the platform for executing smart contracts. Both networks employ the Threaded Virtual Machine (TVM) for smart contract execution, with the Basechain offering lower storage and execution fees than the Masterchain.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Workchain's Interoperability\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Native cross-chain communication protocol enables workchains to interact with each other in a trustless manner without relying on third-party bridges or intermediaries. This allows for seamless workchains interoperability, enabling the transfer of data, assets, and value.\
+By using a cross-chain communication protocol for heterogeneous chains, the Venom blockchain can maintain interoperability between public and private networks, which opens up the possibility of creating powerful user cases:\
+Public-to-Public workchains are open for communication with each other and can maintain shared liquidity in, which means they can easily share value between networks. It is useful for DeFi applications, such as decentralized exchanges, cross-chain lending, and more.\
+Private-to-Private workchains are suitable for CBDC and crypto payments where privacy and compliance are essential. These workchains are generally closed to public exploration and can be operated by a single organization or consortium. Private-to-Private can securely and privately serve sensitive data and transactions, such as financial and personal information.\
+Public-to-Private workchains enable the creation of a system where two types of assets are strongly connected. The first, protected by regulation and compliant, is within private networks, while the second, transparent and participating in open DeFi markets, exist on public networks.\
+Blockchain interoperability provides numerous benefits, including the ability to create customizable Web3 services by mixing and matching different protocols and applications. This allows for the creation of entirely new instruments and platforms that were previously impossible with legacy industries and business models of the Web2 era.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Shardchain\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Shardchains can be thought of as separate processing units, each with its own private memory space for executing computations.\
+In this context, "memory space" refers to the range of addresses where smart contracts are stored on the blockchain. Each shardchain is assigned a specific range of contract addresses and is responsible for executing transactions only for those contracts within that range.\
+A shardchain is a smaller slice of a blockchain state responsible only for a subset of accounts defined by a binary prefix. Each range is validated by a group of validators responsible for processing a specific subset of transactions only for that range.\
+Initially, all transactions are processed by one group of validators belonging to a shardchain \'d8. However, as the number of transactions increases and the shardchain becomes overloaded, the network triggers a split event in which the shardchain is divided into two shardchains. Then if the load on some shardchain is high, these shardchain may be further divided until the load is appropriately distributed. If the load on the network decreases, the network can trigger a "merge event" in which the shardchains are merged back into one shardchain.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 \
+Dynamic sharding\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Splitting and distributing a large database into smaller chunks, known as "shards," is a common practice used in database management. This approach, called database sharding, improves efficiency and scalability by distributing the database across multiple machines in parallel.\
+Similarly, in The Venom blockchain, sharding is used to split the execution of smart contracts into smaller threads, or "shards," which are then processed by different validator groups in parallel. Unlike database sharding, where the data is split and distributed across multiple machines, in computation sharding, the dataset remains common to all "shard validators," but they are responsible for executing different threads of the computation.\
+The Dynamic Sharding Protocol is a key feature of the Venom blockchain that is a solution that enables the network to dynamically adjust the number and size of shards to meet the needs of the current load.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Split event\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Split event is announced several blocks in advance, first in the headers of the corresponding shardchain block and then in the masterchain block that refers to this shardchain block. If for 100 seconds (~50 blocks currently), the shardchain blocks are at least 90% full. Note that these values are configurable and may be tuned in Masterchain.\
+This way, all parties concerned can prepare for the planned change and make necessary adjustments. A subset of validators from a global set of validators is selected to be responsible for executing transactions for a specific range of addresses belonging to the shardchain. This subset is rotated, and they are known in advance so that every validator knows which shards it will need to validate. Finally, the split is committed into the shardchain block and is propagated to the masterchain block, updating the shard configuration of the network. A limited number of validators are selected to validate a single shard. When a shard is split into two shards, an additional group of validators is chosen from the overall validator set to ensure that performance and security are not compromised. This allows for more efficient use of resources and concurrent and parallel transaction processing, staying secure.\
+A shardchain is always divided into two shardchains, each gets a binary prefix in its address.\
+Validator groups produce blocks for a shardchain approximately simultaneously, after which it takes about a second for the masterchain block to be released, which includes the hashes of the shardchain blocks. The shardchain block included in the masterchain block is considered to be finalized and the system relies on its immutability. A masterchain block containing references to blocks of all shardchains represents the system's overall state and can be used as an indicator of updating the state of the blockchain.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Merge event\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf7 Merge event is determined by monitoring the sum of the sizes of the two blocks of sibling shardchains, and if, for 100 seconds (~50 blocks currently), this sum does not exceed 60% of the maximal block size, the validators will produce a block with a "want merge" flag. Note that these values are configurable and may be tuned in Masterchain. This flag tells the subset of validators responsible for the two shardchains to merge together into one shardchain. The validators will commit a "merge commit" flag in the headers of the blocks for their respective shardchains and then stop creating new blocks in the separate shardchains. The combined blocks and transactions from each of the two sibling shardchains are then used to create a new state for the merged shardchain. This allows the system to reduce the number of shardchains to match the current load, improve the efficiency and reduce costs associated with maintaining multiple shard\
+\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Consensus\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The primary goal of the consensus protocol is to provide a mechanism for all the parties involved in the network to reach an agreement on the current state of the blockchain and to ensure that all the transactions included in a block are valid and that the blockchain state is updated consistently and securely on all levels (shardchains, workchains, and masterchain).\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Overview\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The Venom blockchain utilizes a Proof of Stake (PoS) consensus mechanism with The Byzantine fault-tolerant (BFT) algorithm to reach a consensus agreement between validators. This approach ensures network security and provides Sybil resistance.\
+The validator maintains the network's security by staking its VENOM tokens and committing to participate in consensus rounds with other validators. By staking their tokens, validators demonstrate a vested interest in the network's wellbeing and help to achieve Sybil resistance. The more tokens staked on the network, the more difficult it becomes for an attacker to create multiple identities and gain control over the network.\
+The validator proposes candidate blocks and votes on blocks proposed by other validators, utilizing the Byzantine fault-tolerant (BFT) algorithm to ensure a reliable consensus process. The protocol proceeds through a series of rounds, each with a set of validator nodes responsible for proposing, validating, and committing blocks. If a proposed block receives approval from 2/3 of the validator nodes, it commits to the blockchain. If the proposed block does not receive approval in a specific time, it is skipped, and the next round begins.\
+Consensus algorithms can be broadly divided into two classes: those that allow for the creation of multiple chains at the same time (forks) and those that do not allow for forks. In other words, a consensus may have probabilistic or deterministic finality.\
+Deterministic finality refers to the idea that once a transaction has been committed in a block and added to the blockchain, it is considered final and cannot be reversed. This is important for the security and integrity of the network, as it ensures that transactions cannot be altered once they have been recorded on the blockchain. For example, in the context of Bitcoin, a transaction is considered to be final only in probabilistic nature. The transaction's reverse probability decreases as more blocks are added to the chain after it.\
+The Venom Consensus Protocol belongs to the deterministic finality class of algorithms. It ensures the finality of transactions at the commitment stage. Using a BFT makes it almost improbable for forks to occur, as they can only happen in the event of incorrect behavior by a majority of validators.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Delegated staking pools\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Participants with minimum VENOM can participate in the validation process through delegated staking pools. This mechanism allows network participants to delegate their stake to other participants or organizations who will serve as validators. Token holders can stake their tokens in specific validators \'97 the more tokens staked in a validator, the more weight it carries in the consensus voting process. It gives token holders a say in who becomes a validator by choosing which validator candidates to delegate their stake. This helps to ensure that the validator set is representative of the interests and goals of the broader community.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Validator sets\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 There are three main types of validator sets:\
+Overall validator set. The weight-sorted validator list of all validators chosen to participate in the validation process.\
+Masterchain validator set. The list of validators with the largest stake is chosen from the overall validator set.\
+Shardchain validator set. The group of validators chosen from the overall validator set maintains block processing for a specific shardchain.\
+The protocol uses a round-robin role transfer system where validators take turns generating blocks to prevent a single group from monopolizing consensus. The consensus algorithm is executed by each shard using its group of validators.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Components\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The consensus protocol can be decomposed into several distinct components, each responsible for a specific protocol aspect:\
+1) Election: A selection of the overall validator set;\uc0\u8232 2) Block Generation: A creation and verification of blocks;\u8232 3) Consensus: A reaching consensus;\u8232 4) Message Passing Protocol: A passaging messages between validators.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Election\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 First, the consensus protocol must determine which participants are eligible to serve as validators through the election process. The smart contract implements a proof of stake-based election algorithm for selecting a weight-sorted validator list, where the stake determines the weight.\
+The election contract uses various factors to select validators, including the validator's stake size, the min/max number of validators allowed, the min/max stake size, and the maximum difference between the largest and smallest validator stakes. This accounting for these factors helps to ensure network security by maximizing the stake amount and the number of active validators.\
+The election process gives the overall validator set to start the validator session. The selected validator set generates blocs by following the consensus algorithm during the validator session.\
+The Validator Session\
+The Validator Session goes through several rounds of block generation. During block generation rounds, the validator executes the consensus algorithm, resulting in committing the elected block to the blockchain.\
+Validators will have several attempts to commit a valid block to the network before it is considered a failure, and the process must start over with new lead validators. During each attempt, a limited number of validators can propose a block for consideration by the rest of the network.\
+If a validator misses their turn or produces an invalid block, they may be punished by having their stake slashed.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Block Generation\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Before a validator proposes a block to the network, it must first collect and ensure that the block is well-formed and valid according to the block generation rules. These rules include the size of the block, the volume of transactions that can be included in a block, the time between blocks, the block header and transaction format, etc. The block generation component is ensured for creating and validating new blocks in a blockchain network.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Consensus algorithm\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Byzantine Fault Tolerant (BFT) algorithm is part of the block generation round and is responsible for reaching an agreement on block production.\
+The consensus process includes several stages of reaching an agreement:\
+1) Candidate block generation: Validators, which have block generation priority for the round, generate a new candidate block. The candidate is sent to the Approve phase to other validator nodes as soon as the candidate is generated.\
+2) Candidate block approval: The candidate block is collected and checked for corruption by each validator node. If a block is approved, it is signed for approval by each validator and broadcast to the network. A block is considered approved by a node when it receives more than 2/3 of the approval messages and goes to the Vote phase.\
+3) Voting attempts: Several voting attempts are carried out, each with a time limit. The lead validator for the attempt selects a candidate block for voting, and other nodes are notified. Each validator node then sets a block to vote for according to the leader validator's a proposed block. A validator is not required to vote for the proposed block and can choose a different one, but a priority block is preferred due to speed performance. If any approved block receives more than 2/3 of the total validator weights during the voting process, it becomes the candidate for signing (pre-commit block). If two attempts propose different pre-commit blocks, the latest one prevails.\
+4) Block committing: The signing begins as soon as a round attempt yields a pre-committed block. The validator that gets the pre-committed block in the current round signs it and broadcasts it to other validators. When a particular validator receives more than 2/3 signatures from other validators, it switches to the next round, and commits the signed block to the blockchain. If no block is committed in the current round, the round is considered failed, and the process moves to the next round.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Message Passing Protocol\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The message-passing protocol is the network-layer protocol used for communication and coordination among the validator nodes in the network. Validators use it to broadcast messages containing candidate blocks, approvals, votes, and signed blocks to other nodes in the network. It is also used to synchronize the validator session state among the nodes in the network. The message-passing protocol does not implement the consensus algorithm itself. However, it serves as a means of communication and coordination for the validator session higher-level component responsible for making decisions related to the consensus process.\
+Note messages discussed in this section are not the same messages which accounts send to each other. Messages of this protocol are network-layer messages and don't have on-chain representation.\
+\pard\pardeftab720\partightenfactor0
+\cf7 The Message Passing Protocol gives a way to synchronize the chain's state and communicate to reach a consensus agreement.\
+\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Threaded Virtual Machine\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The Venom blockchain provides a way for smart contracts to be executed on TVM (Threaded Virtual Machine), a Turing complete machine on the basis of its ability to execution of machine-level instructions.\
+Note Threaded Virtual Machine is used to execute smart-contract code in {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/architecture"}}{\fldrslt \cf7 the masterchain and basechain}}. Other workchains on the Venom blockchain may use other virtual machines instead of the TVM (e.g., EVM).\
+By design, TVM has an asynchronous model of communication between accounts. Each account can only affect the state of another account only by sending a message. It enables concurrent processing of multiple smart contracts, which can result in significant performance improvements compared to traditional virtual machines.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 The Actor Model in TVM\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The Actor model is a mathematical model of concurrent computation that is often used in distributed systems and in programming languages such as Erlang. It is a way of organizing and structuring the behavior of concurrent processes or actors in a distributed system.\
+In this model, account of the Venom blockchain can be thought of as an actor. Like the actor, the account has a unique address, can send and receive messages, change its state, change its behavior (upgradability), and even spawn other accounts (initialization).\
+This model emphasizes the concept of message-passing concurrency, which allows for the isolation and parallelism of actors. As a result, it provides a way to handle the complexity of concurrent and distributed systems by breaking them down into simpler components that can be composed to form more complex systems.\
+TVM utilizes the actor model to handle interactions between accounts, which is different from how EVM-based networks operate. In EVM, transactions are executed one by one, and each must be completed before the next one can start. From the actor model's perspective, the way transactions are processed in EVM-based networks could be more efficient. This is because all smart contracts on the network are united into one state and can be considered as a single actor within the system, while only external actors (user, web service, any off-chain actor) are considered separate actors. High demand from external actors leads to delays and increases the cost of maintaining a network.\
+In contrast, the Venom blockchain uses an asynchronous communication model, where a message is a way for a sender to initiate an action on an account (smart contract) and potentially change its state. Messages are sent to accounts and contain instructions for the execution of a smart contract. Theoretically, each account can operate independently and interact with external actors separately from other accounts. However, to improve efficiency, accounts are grouped into shards as part of {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/architecture#dynamic-sharding"}}{\fldrslt \cf7 the dynamic sharding protocol}}.\
+\pard\pardeftab720\partightenfactor0
+\cf7 This approach allows contracts to execute in an asynchronous mode, where threads of execution can run in parallel and participants don't know about the current state of each other. TVM does not need to wait for calls between contracts located in different shards to be processed so long as no dependencies link those contracts.\
+\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Accounts\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf7 INFO\
+If you want to create a wallet account without worrying about the technical details, you can refer to {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/general/wallet/create-a-new-wallet-account"}}{\fldrslt \cf7 \ul \ulc7 This Article}}.\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf7 An account on a blockchain serves as a unique identifier for a user, with a corresponding address, balance, and the ability to transfer funds and call smart contracts. It can also refer to a smart contract with behavior (code) for changing data storage.\
+In Ethereum, accounts can be externally owned (controlled by anyone with private keys) or implemented as smart contracts. There is no distinction between accounts and smart contracts in the Venom blockchain. Every account is a smart contract with code, and there is no concept of an externally-owned account (owned by key pair) in the traditional sense. All accounts can hold a balance, perform code, and call each other. This approach is called Account abstraction and allows for authentication through other means beyond external ownership. Since every account in the Venom blockchain is a smart contract, the contract's code can include any authentication logic necessary to verify a user's identity. The flexibility of smart contract code allows for a wide range of authentication options beyond traditional private key ownership.\
+An account has the capability to:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Receive, store, and send VENOM and tokens\
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Receive external messages from outside the blockchain\
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Send and receive messages within the blockchain from other accounts\
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+Send external messages to no specific destination (similar to events in Ethereum)\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf7 The Venom account have next fields:\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\fs30\fsmilli15200 \cf7 address
+\f0\fs32 \cf7  - The identifier by which an account is stored in the blockchain\
+
+\f1\fs30\fsmilli15200 \cf7 storage
+\f0\fs32 \cf7  - The storage contains balance, state, last transaction logical time, and initial code hash\
+
+\f1\fs30\fsmilli15200 \cf7 storage state
+\f0\fs32 \cf7  - The state of storage contains last paid, used, due payment fields. These fields serve the purpose of storage fee calculation.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Address\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The address is the entry point for incoming messages and is the unique identifier for the contract storage.\
+The account address comprises two parts: a workchain identifier, where the first part is the location of the account storage, and the second part is the hash of the initial data.\
+Example: 
+\f1\fs30\fsmilli15200 \cf7 0:0000000000000000000000000000000000000000000000000000000000000000
+\f0\fs32 \cf7 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\fs30\fsmilli15200 \cf7 0
+\f0\fs32 \cf7  \'96 workchain_id. An unsigned 32-bit integer is an identifier of a workchain.\
+
+\f1\fs30\fsmilli15200 \cf7 0000...0000
+\f0\fs32 \cf7  \'96 account_id. A 256-bit address is determined by the hash of the contract code and initial data.\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f3\fs38\fsmilli19360 \cf7 h\
+a\
+s\
+h\
+(\
+i\
+n\
+i\
+t\
+_\
+c\
+o\
+d\
+e\
+,\
+i\
+n\
+i\
+t\
+_\
+d\
+a\
+t\
+a\
+)\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f2 \cf7 hash(init\\_code, init\\_data)
+\f3 \cf7 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\i \cf7 hash
+\f0\i0 \cf7 (
+\f4\i \cf7 init
+\f0\i0 \cf7 _
+\f4\i \cf7 code
+\f0\i0 \cf7 ,
+\f4\i \cf7 init
+\f0\i0 \cf7 _
+\f4\i \cf7 data
+\f0\i0 \cf7 )\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Workchain IDs\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Currently defined workchain IDs list:\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth13519\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf7 Workchain ID\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf7 Description\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth13519\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 -1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 The masterchain is a layer-0 chain, facilitating coordination and communication among workchains, shardchains, and accounts.\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat10 \clwWidth2380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clcbpat10 \clwWidth13519\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 0\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 The Basechain is the first layer-1 workchain for end-users, supporting dApps and serving as the platform for executing smart contracts.\cell \lastrow\row
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Storage\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+last_trans_lt
+\f0\fs32 \cf7  - the last transaction logical time\
+\ls3\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+balance
+\f0\fs32 \cf7  - the number of VENOM tokens on the account balance\
+\ls3\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+init_code_hash
+\f0\fs32 \cf7  - the hash of the initial contract code used when the contract was first deployed\
+\ls3\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+state
+\f0\fs32 \cf7  - a current state of an account, can be one of the following values:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls3\ilvl1\cf7 \kerning1\expnd0\expndtw0 {\listtext	
+\f5 \cf7 \uc0\u9702 
+\f0 \cf7 	}\cf7 \expnd0\expndtw0\kerning0
+uninit - the account only has a balance and its code and data have not been initialized yet.\
+\ls3\ilvl1\cf7 \kerning1\expnd0\expndtw0 {\listtext	
+\f5 \cf7 \uc0\u9702 
+\f0 \cf7 	}\cf7 \expnd0\expndtw0\kerning0
+active - the account's code and data have been initialized.\
+\ls3\ilvl1\cf7 \kerning1\expnd0\expndtw0 {\listtext	
+\f5 \cf7 \uc0\u9702 
+\f0 \cf7 	}\cf7 \expnd0\expndtw0\kerning0
+frozen - the account's code and data have been replaced with a hash, but the balance is still explicitly stored. The balance of a frozen account may be negative, indicating outstanding storage payments.\
+\ls3\ilvl1\cf7 \kerning1\expnd0\expndtw0 {\listtext	
+\f5 \cf7 \uc0\u9702 
+\f0 \cf7 	}\cf7 \expnd0\expndtw0\kerning0
+nonexist\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Storage state\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+last_paid
+\f0\fs32 \cf7  - the timestamp of the latest storage payment\
+\ls4\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+used
+\f0\fs32 \cf7  - the structure contains information about how many cells and bits stores account\
+\ls4\ilvl0
+\f1\fs30\fsmilli15200 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \expnd0\expndtw0\kerning0
+due_payment
+\f0\fs32 \cf7  - the amount of the storage debt\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Types of the wallet accounts\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Wallet accounts\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 To interact with smart contracts, store, send, and receive Venom tokens within the network, users must have a wallet account. A wallet account is a smart contract designed for this purpose in the Venom network.\
+When a user wants to transfer funds from a controlled wallet account to another wallet account, they send a signed external message to the initial wallet account. The wallet account verifies the sender and permits them to pay for the transaction fee from their balance. Then it transfers funds from the initial wallet account to the receiving wallet account.\
+To send tokens to another wallet account, one must have knowledge of the recipient's address. An important concept here is that it is possible to calculate an address even before the contract is deployed on the network and send funds to it. This means that anyone can send tokens to a recipient whose contract has not yet been deployed, and those tokens will be accepted, and the contract can be deployed.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Default wallet\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 This is the simplest type of wallet account, and it is created by default when a user creates a new address in the network. The default wallet account contract allows users to store, send, receive Venom tokens, and call other contracts.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Multisig wallet\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf7 A multi-signature wallet is a type of wallet that is controlled by multiple users to increase security. Transactions must be signed by multiple parties before they can be executed. This is useful for organizations or groups of individuals who want to have multiple people involved in approving transactions to ensure accountability and security.\
+\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Messages and Transactions\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 All interactions with the Venom network are carried out through messages.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Prerequisites\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 To help you better understand this page, we recommend you first read {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/accounts"}}{\fldrslt \cf7 Accounts}}.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Message\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 A message sent to an account triggers the creation of a transaction that modifies the account's state. The message includes instructions for executing a smart contract (an account).\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Message types\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The Venom network has three different types of messages:\
+Inbound external message: a message sent from outside the blockchain into the blockchain. These messages don't have a 'from' address and can be sent by regular users, external services and any participants outside the blockchain, known as "messages from nowhere". Inbound external messages initiate changes to the state of the blockchain.\
+The external message can not be the value-bearing message from one participant to another. It only can declare intent to transfer value to another account.\
+Internal message: a message sent from one contract to another. Like an inbound external message, it updates the state of the Venom network.\
+Only an Internal message can be a value-bearing message.\
+Outbound external message: Known as a "message to nowhere" or "event". This is a message that can be emitted by a smart contract. Off-chain participants can subscribe to events within the Venom network and receive them.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Message structure\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 A message consists of such parts as 'header' and 'body'.\
+The header contains the information about a sender, receiver, value, and the information necessary required by the validator to apply the message to the block.\
+The message body comprises the payload of virtual machine instructions that are necessary to execute the smart contract.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Transaction\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 A transaction is a direct result of the processing of exactly one inbound message by a recipient account code. When an inbound message is received by an account, it leads to the computation of the account's new state and the possibility of generating one or more outbound messages with the account serving as the source. The inbound message and the previous state of the account serve as inputs for the transaction, while the generated outbound messages and the next state of the account serve as outputs. This relation can be represented as a Directed Acyclic Graph (DAG).\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs48 \cf7 Transaction phases\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 A transaction is a multi-step process composed of several distinct phases, each with its specific purpose. Each phase is a logical step in the message execution and may either complete successfully or result in an error. If an error occurs, the next stage not be executed.\
+The purpose of the credit phase is to add the value of the received internal message to the account's balance.\
+The storage phase is responsible for collecting storage payments for the account state, which includes the smart contract code and data. The storage phase is absent if the transaction is sent to deploy a new smart contract, which did not exist before. During this phase, the smart contract may be frozen if its balance is insufficient to pay the storage fee.\
+The computing phase is where the smart contract code is invoked inside an instance of TVM with appropriate parameters, including the inbound message and the account's persistent data. This phase terminates with an exit code, new persistent data, and an action list, which includes outbound messages to be sent. The processing phase may lead to creating a new account (uninitialized or active) or activating a previously uninitialized or frozen account. The gas payment, equal to the product of the gas price and the gas consumed, is exacted from the account balance.\
+The action phase is where the actions from the action list are performed if the smart contract is terminated successfully (with exit code 0 or 1). Suppose it is impossible to perform all the actions, for example, because of insufficient funds to transfer with an outbound message. In that case, the transaction is aborted, and the account state is rolled back.\
+The Bounce phase is triggered when a transaction is aborted, and the inbound message has its bounce flag set. This phase involves automatically generating an outbound message, with the bounce flag clear, and sending it back to the original sender. The value of the original inbound message, minus any gas payments and forwarding fees, is transferred to this generated message, which has an empty body.\
+The execution of a transaction requires payment of various types of fees. Each kind of fee serves a purpose, such as incentivizing validators to maintain the correct operation of the network, perform transaction execution, and store contract data on their nodes. Also, it serves as a measure to restrict spamming and malicious attempts to slow down the network.\
+\pard\pardeftab720\partightenfactor0
+\cf7 Note an external message is not a value-bearing message. Only an internal message can transfer value between accounts and increase its balance in the credit phase, and only after that are all fee payments due from the account balance.\
+\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Gas and Fees\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 When sending a message to the network, a specific amount of Venom tokens must be attached. This is used to compensate validators for their work, cover the costs of storing the message on the network, and any remaining balance is returned as change.\
+This system serves multiple purposes:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa400\partightenfactor0
+\ls5\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	1	}\cf7 \expnd0\expndtw0\kerning0
+To incentivize validators to ensure the network runs smoothly, perform transaction calculations, and store contract data on their nodes.\
+\ls5\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	2	}\cf7 \expnd0\expndtw0\kerning0
+To restrict the ability to send spam to the network and prevent attempts by malicious parties to slow it down.\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf7 There are several important characteristics of commissions:\
+The cost per unit of gas on the network is fixed and is outlined in the global configuration, which can only be modified by the consensus of validators.\
+\pard\pardeftab720\partightenfactor0
+\cf7 GAS COST IN THE NETWORK\
+Currently, one gas unit in the network costs 100 nanoVENOM\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf7 The network also charges a commission for data storage for the entire duration of their existence in the network\
+The commission is always paid from the contract balance, as external messages cannot be value-bearing messages.\
+The user decides how much VENOM to attach as payment fees from their contract account for the call. The attached value is the upper limit for the cost of executing the call chain. Typically, the DApp automatically suggests a recommended value for the user.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Fee Calculation\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 As we know from the article {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/learn/messages-and-transactions#transaction-phases"}}{\fldrslt \cf7 Messages and Transactions}} , there are several phases of transaction execution. Each phase is associated with its own type of fee.\
+Inbound external message fee: the only fee that is not related to the transaction execution phases described. It is charged when a transaction is initiated by an external message, as a fee for sending the message (forward message fee).\
+Fees in the context of execution phases:\
+Storage: related to the namesake fee (Storage fee) and charged for storing the contract and associated data.\
+Credit: the only phase that does not involve the charging of any fee.\
+Compute: charges a fee (Gas fee) for calculations performed in the called account (contract).\
+Action: each outgoing message from the contract, both external and internal, must be paid a fee (Action fee) as a fee for sending the message.\
+Bounce: in case of an error, an exception will be created and an internal outgoing message will be taken for which a fee will be charged as a fee for sending the message.\
+\pard\pardeftab720\sa500\partightenfactor0
+
+\fs96 \cf7 Network Maintainers\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Welcome to the Venom Maintainers section. Maintainers are very important participants in the Venom Network, maintaining the security, performance, and availability of the network for other participants.\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Validator\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 The validator plays an essential role in maintaining the security of the network through staking Venom tokens and actively participating in consensus with other validators. Using the consensus algorithm, the validator proposes candidate blocks and votes on blocks proposed by other validators. Once the voting threshold is reached, the proposed block is added to the chain. This process is facilitated by an overlay network created by the network-layer protocol, which connects the validators.\
+Validators are incentivized to participate in the block production process because each included block provides a reward.\
+Masterchain validators also play an essential role in maintaining the security of the masterchain network. Through the creation of master-blocks, they enable shardchains to share messages, the state of contracts, and the network sharding configuration with other shardchains.\
+\pard\pardeftab720\partightenfactor0
+\cf7 INFO\
+If you want to know how to become a Validator, {\field{\*\fldinst{HYPERLINK "https://docs.venom.foundation/start/maintain/how-to-become-a-validator"}}{\fldrslt \cf7 \ul \ulc7 Click Here}}\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs64 \cf7 Delegator\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf7 Delegators play an important part in the decentralization of the network. By staking to validators, they enhance network security and offer direction to the Elector's algorithm on which validators should move forward to the next round. This enables low stake validators who are well-regarded by the community to accumulate funds in their pools and become validators.\
+\
+ince Venom is not an nPoS-based blockchain, any participant with enough tokens can become a validator, even if they haven't been nominated by other participants.\
+\pard\pardeftab720\partightenfactor0
+\cf7 Validators share rewards in Venom tokens with delegators based on their shares, but they also share risks. If a validator node is offline during validation, the algorithm may penalize them by slashing their stake. In this case, the delegator's stake may also be reduced.\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf7 \
+\
+}
